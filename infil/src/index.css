@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; margin: 0; }
+body {
+  background: #F7F8FC;
+  color: #1F2440;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+/* 미래 연구기지: 은은한 격자 + 부유 점광 (전자칠판에서도 과하지 않게) */
+.bg-station {
+  background-color: #F7F8FC;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(108,99,255,0.06), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(255,184,77,0.06), transparent 35%),
+    linear-gradient(rgba(108,99,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(108,99,255,0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 28px 28px, 28px 28px;
+}
+* { -webkit-user-select: none; user-select: none; }
+input { -webkit-user-select: text; user-select: text; }
