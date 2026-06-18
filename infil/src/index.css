@@ -1,7 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+    font-family: 'YeongjuSeonbi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/YEONGJUSeonbiTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
 html, body, #root { height: 100%; margin: 0; }
 body {
   background: #F7F8FC;
@@ -21,3 +26,8 @@ body {
 }
 * { -webkit-user-select: none; user-select: none; }
 input { -webkit-user-select: text; user-select: text; }
+* {
+  font-family: 'YeongjuSeonbi', sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+}
